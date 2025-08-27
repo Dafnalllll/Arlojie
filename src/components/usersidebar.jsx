@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { User, Headphones } from "lucide-react";
 
 const UserSidebar = ({ onClose }) => {
   const navigate = useNavigate();
@@ -61,45 +62,7 @@ const UserSidebar = ({ onClose }) => {
         {/* Akun & Layanan */}
         <div className="space-y-6">
           <div className="flex items-center gap-3 text-lg">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <circle cx="12" cy="8" r="4" stroke="black" strokeWidth="2" />
-              <path
-                d="M4 20c0-4 4-6 8-6s8 2 8 6"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            Akun Saya
-          </div>
-          <div className="flex items-center gap-3 text-lg">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 20v-2m0-4v-4m0-4V4m0 16a8 8 0 100-16 8 8 0 000 16z"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M9 16v1a3 3 0 006 0v-1"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <Headphones className="w-6 h-6" />
             Layanan Costumer
           </div>
         </div>

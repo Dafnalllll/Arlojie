@@ -155,12 +155,7 @@ export const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 md:from-black/80 via-black/70 md:via-black/50 to-black/50 md:to-transparent"></div>
 
         {/* Navbar - Responsive */}
-        <div
-          className="absolute top-0 left-0 w-full z-30"
-          data-aos="fade-down"
-          data-aos-delay="300"
-          data-aos-duration="1200"
-        >
+        <div>
           <Navbar />
         </div>
 
@@ -295,7 +290,6 @@ export const Home = () => {
                         ? "text-red-500 fill-current"
                         : "text-gray-400 hover:text-red-500"
                     }`}
-                    
                     fill={wishlistItems.has(watch.id) ? "currentColor" : "none"}
                     stroke="currentColor"
                     viewBox="0 0 24 24"
